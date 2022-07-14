@@ -55,7 +55,7 @@ header {
 }
 
 /**Resaltador en el texto*/
-span.bullet{
+span.bullet {
     color: #32502E;
 } 
 
@@ -78,12 +78,13 @@ span.bullet{
 
 /**Para sacar los bullets a la barra de Nav***/
 ul {
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color:#32502E;
     text-align: center;
     top: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 li {
@@ -93,12 +94,13 @@ li {
 /***list-style-type y text-decoration para darle formato agradable**/
 /***a la barra nav**/
 .barraNav li a {
-    display: block;
-    color: #E9EFC0;
+    margin:0;
     padding: 14px 16px;
-    text-decoration: none;
-    top:0px;
+    overflow:hidden;
+    color: #E9EFC0;
     text-align: center;
+    text-decoration: none;
+    top:0;
     position: sticky;
 }
 
@@ -197,9 +199,10 @@ li a:hover {
     }
 
     /**Menú Header**/
-    .header ul {
-        flex-direction: column;
-        justify-content: center;
+    header ul  {
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction:column;
         align-items: center;
     }
 
