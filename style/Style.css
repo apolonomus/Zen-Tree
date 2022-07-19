@@ -37,7 +37,7 @@ body{
 /**Área Header*/
 header {
     grid-area:header;
-    background-color: #E9EFC0;
+    background-image: url(../images/trees.jpg);
 }
 
 /**Área Main*/
@@ -73,8 +73,10 @@ span.bullet {
     color: #E9EFC0;
     text-align: center;
     margin:0;
-    background-image: url(../images/trees.jpg);
+    animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
 }
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
 
 /**Para sacar los bullets a la barra de Nav***/
 ul {
@@ -101,7 +103,6 @@ li {
     text-align: center;
     text-decoration: none;
     top:0;
-    position: sticky;
 }
 
 /**Animación Nav*/
@@ -120,16 +121,33 @@ li a:hover {
     background-color: #83BD75;
     padding:20px;
     margin:10px;
-    height: 240px;/**altura fija**/
+    height: 315px;/**altura fija**/
     width:240px;/**ancho fijo**/
-    text-align: justify;
+    text-align: center; 
 }
+
 
 .flex-container{
     border: 2px solid black;
     display: flex;/**Alinea en Filas las cajas (por defecto alinea en filas)**/
     flex-flow: row wrap;/**En fila y que salta de lìnea**/
     justify-content: space-around;/**Acomodar en contenedor**/
+    width: 100%;
+
+}
+
+.compra { width: 10em;
+    height: 5ex;
+    background-color: #E9EFC0;
+    border: 2px solid #4E944F;
+    border-radius: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.compra:hover {
+    background-color: bisque;
 }
 
 /**Sección - Contacto-Estilos al Formulario*/

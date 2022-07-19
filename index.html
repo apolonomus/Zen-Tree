@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./style/Style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="Stylesheet">
 </head>
 <body>                                 <!--Cuerpo de nuestra Web-->
     <div class="grilla">                       <!--Grid-->
@@ -32,7 +33,7 @@
                 </nav>
         </header>
         <main class="m">                <!--Contenido de la Página-->
-            <div  class="tree">
+            <div  class="tree" data-aos="zoom-in">
                 <img src="images/Zen Tree.jpg" alt="Tree">
             </div>
             <br>
@@ -72,8 +73,12 @@
             <div class="redes">
                 <img class="icon" src="./images/social-media.png">
             </div>
-        </footer>
-        
+        </footer> 
+        <!--Animaciones para la página Web Source AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>                                          
+            AOS.init();
+        </script>
     </div>
 </body>
 </html>                                                                 
