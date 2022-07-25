@@ -22,6 +22,9 @@ https://colorhunt.co/palette/32502e406343ece7b4f3efcc
 
 body{
     font-family: 'splash';
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /**Área de la Página-Grid***/
@@ -43,7 +46,7 @@ header {
 /**Área Main*/
 .m {
     grid-area: main;
-    background-color:#E9EFC0;
+    background-color:whitesmoke;
     font-family:splash;
     padding: 30px;
     display:flex;
@@ -75,6 +78,7 @@ span.bullet {
     margin:0;
     animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
 }
+/**Animación del Título Principal*/
 @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 
 
@@ -87,6 +91,7 @@ ul {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 0;
 }
 
 li {
@@ -102,7 +107,6 @@ li {
     color: #E9EFC0;
     text-align: center;
     text-decoration: none;
-    top:0;
 }
 
 /**Animación Nav*/
@@ -160,7 +164,7 @@ li a:hover {
     font-size: 25px;
     padding:30px;
     color: #32502E;
-    background-color: #E9EFC0;
+    background-color:whitesmoke;
     text-align:center;
 }
 
@@ -171,7 +175,7 @@ li a:hover {
     padding:30px;
     color: #32502E;
     text-align:left;
-    background-color: #E9EFC0;
+    background-color: whitesmoke;
 }
 
 .redes{
@@ -185,7 +189,31 @@ li a:hover {
     height: 48px;
 }
 
-/**Mobile First para Res 768 px**/
+/**Mobile First - Bootstrap**/
+
+/**Small devices (landscape phones, 576px and up)**/
+@media screen and (max-width:576px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    }
+
+    /**Menú Header**/
+    header ul  {
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction:column;
+        align-items: center;
+    }
+
+}
+
+
+/**Medium devices (tablets, 768px and up)**/
 @media screen and (max-width:768px) {
     .grilla {
         display: grid;
@@ -205,23 +233,44 @@ li a:hover {
 
 }
 
-/**Mobile First para Res 480 px**/
-@media screen and (max-width:480px) {
-    .grilla {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-areas:
-        "header"
-        "main"
-        "footer"
-    }
+/**Large devices (desktops, 992px and up)**/
+@media screen and (max-width:992px) {
 
-    /**Menú Header**/
-    header ul  {
-        display:flex;
-        justify-content:space-evenly;
-        flex-direction:column;
+/**Área de la Página-Grid***/
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main" 
+    "footer footer footer"
+    ;}
+
+    .header ul {
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
 }
+
+/**Large devices (desktops, 1200px and up)**/
+@media screen and (max-width:1200px) {
+
+/**Área de la Página-Grid***/
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main" 
+    "footer footer footer"
+    ;}
+
+    .header ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }

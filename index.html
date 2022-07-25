@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./style/Style.css">
+    <!--Animaciones en AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="Stylesheet">
+    <!--bootstrap (CDN First)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--bootstrap (CDN Icons)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--css (Second)-->
+    <link rel="stylesheet" href="./style/Style.css">
 </head>
-<body>                                 <!--Cuerpo de nuestra Web-->
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!--Cuerpo de nuestra Web-->
     <div class="grilla">                       <!--Grid-->
         <header class="hader">               <!--Encabezado-->
             <h1 class="titulo__principal">Zen Tree</h1>
                 <nav>                   <!--Barra de Navegación-->
-                    <ul class="barraNav">
+                    <ul class="barraNav" class="rounded mx-auto d-block">
                         <li><!--Enlaces Relativos-->
                             <a href="index.html">Home</a>
                         </li>
@@ -34,7 +43,7 @@
         </header>
         <main class="m">                <!--Contenido de la Página-->
             <div  class="tree" data-aos="zoom-in">
-                <img src="images/Zen Tree.jpg" alt="Tree">
+                <img src="images/Zen Tree.jpg" class="rounded mx-auto d-block" alt="Tree">
             </div>
             <br>
             <h2 class="titulo__secundario">¿Como nace esta idea?</h2>
@@ -42,7 +51,13 @@
             <br>
             <p><span class="bullet"><strong>Físico</strong></span></p>
             <br>
-            <p>Tener un plan de desarrollo y mantenimiento físico es imprescindible para ser feliz. No necesariamente necesitas ser un atleta con aspiraciones olímpicas, pero sí tener un plan donde te mantienes de forma saludable.Comer bien, hacer un poco de ejercicio con cierta frecuencia y evitar malos hábitos siempre te ayudarán a sentirte pleno y lleno de energía.Ahí está la clave: la energía. Para poder desarrollar los 6 pilares necesitas energía. Una de las razones principales por las cuales las personas descuidan alguno de los pilares es porque están cansados y no pueden más (físicamente). Los hábitos antes mencionados te darán la energía para hacer esto y todo lo demás.</p>
+            <p>Tener un plan de desarrollo y mantenimiento físico es imprescindible para ser feliz. No necesariamente necesitas ser un atleta con aspiraciones olímpicas, pero sí tener un plan donde te mantienes de forma saludable:
+            <br>
+            <br>
+            <!--Imágenes como Bullets-->
+            <image class="icon" src="C:\Users\CGUG\Desktop\Coderhouse\Zen Tree Roldan\Zen-Tree\images\icons\manzana.png">
+            </image>Comer bien,<image class="icon" src="C:\Users\CGUG\Desktop\Coderhouse\Zen Tree Roldan\Zen-Tree\images\icons\dumbbel.png">
+            </image>hacer un poco de ejercicio con cierta frecuencia y evitar malos hábitos <image class="icon" src="C:\Users\CGUG\Desktop\Coderhouse\Zen Tree Roldan\Zen-Tree\images\icons\porcion-de-pizza.png"></image> siempre te ayudarán a sentirte pleno y lleno de energía.Ahí está la clave: la energía. Para poder desarrollar los 6 pilares necesitas energía. Una de las razones principales por las cuales las personas descuidan alguno de los pilares es porque están cansados y no pueden más (físicamente). Los hábitos antes mencionados te darán la energía para hacer esto y todo lo demás.</p>
             <br>
             <p><span class="bullet"><strong>Mental</strong></span></p>
             <br>
@@ -65,9 +80,12 @@
             <p>El pilar del “Hoy” tiene que ver con estar presente en el hoy, ahora. Es pararte para ver, oler y "recoger las flores del camino". Es tratar de ver lo hermoso que hay dentro de todo lo gris y oscuro de la vida.Lo especial de este pilar es que se deshace de toda ambición y expectativa. En todos los demás pilares tenemos metas, ambiciones, expectativas que cumplir. No en este pilar. La capacidad de ser feliz “hoy” está fundamentada en dejar a un lado toda ambición y expectativa y apreciar el momento tal como es.</p>
             <br>
             <h2 class="titulo__secundario" align="center">Chill environment</h2>
-            <div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/rMWC-kY7QOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
+            <!--Video Incrustado-->
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rMWC-kY7QOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+
         </main>
         <footer class="f">                 <!--Pie de página-->
             <div class="redes">
@@ -79,6 +97,8 @@
         <script>                                          
             AOS.init();
         </script>
+        <!--Bundle-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>                                                                 
