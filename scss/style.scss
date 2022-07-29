@@ -1,0 +1,48 @@
+/**Reset***/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**Área de la Página-Grid***/
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main" 
+    "footer footer footer"  
+}
+
+/**SASS***/
+
+/**Variables SASS***/
+@import "../utilities/variables";
+
+/**Media query***/
+@import "../layout/mediaqueries";
+
+/**header**/
+@import "../layout/header";
+
+/**main***/
+@import "../layout/main";
+
+
+/**footer***/
+@import "../layout/footer";
+
+/**
+Paleta de Colores
+#E9EFC0
+#B4E197
+#83BD75
+#4E944F
+**/

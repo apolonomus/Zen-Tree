@@ -1,0 +1,91 @@
+/**Mobile First - Bootstrap**/
+
+/**Small devices (landscape phones, 576px and up)**/
+@media screen and (max-width:576px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    }
+
+    /**Menú Header**/
+    header ul  {
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    /**Video Youtube Resposive para la reso de 576px **/
+    iframe {
+        width:320px;
+        height: 160px;
+    }
+
+}
+
+
+/**Medium devices (tablets, 768px and up)**/
+@media screen and (max-width:768px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+    }
+
+    /**Menú Header**/
+    .header ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/**Large devices (desktops, 992px and up)**/
+@media screen and (max-width:992px) {
+
+/**Área de la Página-Grid***/
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main" 
+    "footer footer footer"
+    ;}
+
+    .header ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/**Large devices (desktops, 1200px and up)**/
+@media screen and (max-width:1200px) {
+
+/**Área de la Página-Grid***/
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main" 
+    "footer footer footer"
+    ;}
+
+    .header ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
