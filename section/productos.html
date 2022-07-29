@@ -14,7 +14,7 @@
     <!--bootstrap (CDN Icons)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!--css (Second)-->
-    <link rel="stylesheet" href="../style/Style.css">
+    <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>                                 <!--Cuerpo de nuestra Web-->
     <div class="grilla">                       <!--Grid-->
@@ -42,7 +42,27 @@
         </header>
         <main class="m">                <!--Contenido de la Página-->
         <!--Productos para incorporar al Carrousel-->
-        
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         
             <h2 class="titulo__secundario" align="center">Artículos disponibles</h2>
             <section class="flex-container"> <!--Contenedor Principal (Padre)-->
