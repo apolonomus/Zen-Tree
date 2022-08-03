@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /**Reset***/
+/**Reset***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Splash&family=The+Nautigal:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Splash&family=The+Nautigal:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +15,8 @@ body {
   box-sizing: border-box;
 }
 
+/**Variables SASS***/
+/**Grid System***/
 /**Área de la Página-Grid***/
 .grilla {
   display: grid;
@@ -19,8 +24,6 @@ body {
   grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
-/**SASS***/
-/**Variables SASS***/
 /**Media query***/
 /**Mobile First - Bootstrap**/
 /**Small devices (landscape phones, 576px and up)**/
@@ -85,19 +88,54 @@ body {
     align-items: center;
   }
 }
-/**header**/
+/**Header**/
 /**Área Header*/
 header {
   grid-area: header;
   background-image: url(../images/trees.jpg);
+  font-family: splash;
 }
 
-/**main***/
-/**Área Main*/
+/**Para sacar los bullets a la barra de Nav***/
+ul {
+  overflow: hidden;
+  background-color: #32502E;
+  text-align: center;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+
+li {
+  display: inline-flex;
+}
+
+.barraNav li a {
+  margin: 0;
+  padding: 14px 16px;
+  overflow: hidden;
+  color: #E9EFC0;
+  font-size: larger;
+  text-align: center;
+  text-decoration: none;
+}
+.barraNav li a:hover {
+  background-color: #111;
+}
+
+/**Animación Nav*/
+.active {
+  background-color: #4CAF50;
+}
+
+/**Main***/
+/**Área Main Global*/
 .m {
   grid-area: main;
   background-color: whitesmoke;
-  font-family: splash;
+  font-family: arial;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -105,27 +143,6 @@ header {
   align-items: center;
   text-align: justify;
   min-height: 100%;
-}
-
-/**Área Main para la Sección Servicios*/
-.m2 {
-  grid-area: main;
-  background-color: whitesmoke;
-  font-family: splash;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: justify;
-  min-height: 100%;
-}
-
-.d-inline-flex {
-  display: inline-flex !important;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 
 /**Resaltador en el texto*/
@@ -153,76 +170,6 @@ span.bullet {
     opacity: 1;
   }
 }
-/**Para sacar los bullets a la barra de Nav***/
-ul {
-  overflow: hidden;
-  background-color: #32502E;
-  text-align: center;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 0;
-}
-
-li {
-  display: inline-flex;
-}
-
-/***list-style-type y text-decoration para darle formato agradable**/
-/***a la barra nav**/
-.barraNav li a {
-  margin: 0;
-  padding: 14px 16px;
-  overflow: hidden;
-  color: #E9EFC0;
-  text-align: center;
-  text-decoration: none;
-}
-
-/**Animación Nav*/
-li a:hover {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-
-/**Sección - Productos- Imagenes de main**/
-.box {
-  border: 2px solid black;
-  background-color: #83BD75;
-  padding: 20px;
-  margin: 10px;
-  height: 315px; /**altura fija**/
-  width: 240px; /**ancho fijo**/
-  text-align: center;
-}
-
-.flex-container {
-  border: 2px solid black;
-  display: flex; /**Alinea en Filas las cajas (por defecto alinea en filas)**/
-  flex-flow: row wrap; /**En fila y que salta de lìnea**/
-  justify-content: space-around; /**Acomodar en contenedor**/
-  width: 100%;
-}
-
-.compra {
-  width: 10em;
-  height: 5ex;
-  background-color: #E9EFC0;
-  border: 2px solid #4E944F;
-  border-radius: 20px;
-  font-weight: bold;
-  color: black;
-  cursor: pointer;
-}
-
-.compra:hover {
-  background-color: bisque;
-}
-
 /**Sección - Contacto-Estilos al Formulario*/
 .fomr1 {
   align-content: space-around;
@@ -246,7 +193,7 @@ li a:hover {
   background-color: whitesmoke;
 }
 
-/**footer***/
+/**Footer***/
 /**Área Footer*/
 .f {
   grid-area: footer;
@@ -263,14 +210,4 @@ li a:hover {
 .icon {
   width: 48px;
   height: 48px;
-}
-
-/**
-Paleta de Colores
-#E9EFC0
-#B4E197
-#83BD75
-#4E944F
-**/
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

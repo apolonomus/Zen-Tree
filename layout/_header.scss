@@ -2,4 +2,41 @@
 header {
     grid-area:header;
     background-image: url(../images/trees.jpg);
+    font-family: $baseFont1;
+}
+
+/**Para sacar los bullets a la barra de Nav***/
+ul {
+    overflow: hidden;
+    background-color:#32502E;
+    text-align: center;
+    top: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
+li {
+    display:inline-flex;
+} 
+
+.barraNav li a {
+    margin:0;
+    padding: 14px 16px;
+    overflow:hidden;
+    color: #E9EFC0;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #111;
+    }
+
+}
+
+/**Animación Nav*/
+.active {
+    background-color: #4CAF50;
 }

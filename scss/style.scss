@@ -1,48 +1,23 @@
+
 /**Reset***/
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/**Área de la Página-Grid***/
-.grilla {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas:
-    "header header header"
-    "main main main" 
-    "footer footer footer"  
-}
-
-/**SASS***/
+@import "../layout/reset";
 
 /**Variables SASS***/
 @import "../utilities/variables";
 
+/**Grid System***/
+@import "../layout/gridsystem";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Splash&family=The+Nautigal:wght@400;700&display=swap');
+
 /**Media query***/
 @import "../layout/mediaqueries";
 
-/**header**/
+/**Header**/
 @import "../layout/header";
 
-/**main***/
+/**Main***/
 @import "../layout/main";
 
-
-/**footer***/
+/**Footer***/
 @import "../layout/footer";
-
-/**
-Paleta de Colores
-#E9EFC0
-#B4E197
-#83BD75
-#4E944F
-**/

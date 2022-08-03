@@ -1,0 +1,10 @@
+
+/**Área de la Página-Grid***/
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main" 
+    "footer footer footer"  
+}
