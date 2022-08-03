@@ -1,9 +1,7 @@
 Versiones 1.2.:
 
-Mejoras en la divión de la estructura HTML con separación en secciones
+Mejoras en la división de la estructura HTML con separación en secciones
     *Sección - Home: Algunos Card para el main
-
-    *Sección - Nosotros: 
 
     *Sección - Servicios: Card para los servicios que se Ofrece
 
