@@ -1,4 +1,5 @@
 Versiones 1.2.:
+Corrección de los bullets en Index.
 
 Mejoras en la división de la estructura HTML con separación en secciones
     *Sección - Home: Algunos Card para el main
