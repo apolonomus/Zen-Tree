@@ -1,16 +1,15 @@
 /**Área Footer*/
 .f {
     grid-area: footer;
-    padding: 30px;
+    @include medidas ( none, none, 30px, none);
     background-color:#32502E;
 }
 
 
 .redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    @extend .iconsconfig
 }
+
 
 .icon{
     width: 48px;

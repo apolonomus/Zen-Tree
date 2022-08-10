@@ -2,7 +2,6 @@
 /**Reset***/
 /**Reset***/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Splash&family=The+Nautigal:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Splash&family=The+Nautigal:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +15,14 @@ body {
 }
 
 /**Variables SASS***/
+/**Mixins***/
+/**Extends***/
+.iconsconfig, .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 /**Grid System***/
 /**Área de la Página-Grid***/
 .grilla {
@@ -92,10 +99,31 @@ body {
 /**Área Header*/
 header {
   grid-area: header;
-  background-image: url(../images/trees.jpg);
+  background-image: url(../images/Trees.png);
+  background-size: cover;
   font-family: splash;
 }
 
+/**Titulo de la Página Web*/
+.titulo__principal {
+  font-size: 100px;
+  color: #E9EFC0;
+  text-align: center;
+  margin: 0;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/**Animación del Título Principal*/
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 /**Para sacar los bullets a la barra de Nav***/
 ul {
   overflow: hidden;
@@ -134,7 +162,9 @@ li {
 /**Área Main Global*/
 .m {
   grid-area: main;
-  background-color: whitesmoke;
+  background-image: url(../images/suculentas.jpg);
+  background-position: center;
+  background-size: cover;
   font-family: arial;
   padding: 30px;
   display: flex;
@@ -150,61 +180,59 @@ span.bullet {
   color: #32502E;
 }
 
-/**Titulo de la Página Web*/
-.titulo__principal {
-  font-size: 100px;
-  color: #E9EFC0;
-  text-align: center;
-  margin: 0;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-/**Animación del Título Principal*/
-@keyframes text-focus-in {
-  0% {
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    filter: blur(0);
-    opacity: 1;
-  }
-}
 /**Sección - Contacto-Estilos al Formulario*/
-.fomr1 {
-  align-content: space-around;
-}
-
 /**Titulos Secundarios*/
 .titulo__secundario {
-  font-size: 25px;
+  font-size: 50px;
+  width: none;
+  height: none;
   padding: 30px;
+  margin: none;
   color: #32502E;
-  background-color: whitesmoke;
+  background-color: none;
   text-align: center;
 }
 
 /**Titulos Terciario*/
 .titulo__terciario {
   font-size: 20px;
+  width: none;
+  height: none;
   padding: 30px;
+  margin: none;
   color: #32502E;
   text-align: left;
-  background-color: whitesmoke;
+  background-color: none;
+}
+
+/**Titulos Slides*/
+.titulo__slides {
+  font-size: 20px;
+  width: none;
+  height: none;
+  padding: 30px;
+  margin: none;
+  color: black;
+  text-align: left;
+  background-color: none;
+}
+
+.carouselExampleControls {
+  height: 1rem;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
 }
 
 /**Footer***/
 /**Área Footer*/
 .f {
   grid-area: footer;
+  width: none;
+  height: none;
   padding: 30px;
+  margin: none;
   background-color: #32502E;
-}
-
-.redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 
 .icon {

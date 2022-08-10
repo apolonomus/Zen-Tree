@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Zeen Tree, Contacto">
+    <meta name="description" content="Esta sección es la forma que nos podes contactar">
     <title>Contactos</title>
     <!--Animaciones en AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="Stylesheet">
@@ -17,8 +19,8 @@
 </head>
 </head>
 <body><!--------------------------------------------------------------Cuerpo de nuestra Web----------------------------------------------------------------------------->
-    <div class="grilla">                       <!--Grid-->
-        <header class="hader">              <!--Encabezado-->
+    <div class="grilla"><!--Grid-->
+        <header class="hader"><!-------------------------------------------Encabezado----------------------------------------------------------------------------------->
             <h1 class="titulo__principal">Contactos</h1>
             <nav>                        <!--Barra de Navegación-->
                 <ul class="barraNav">
@@ -40,33 +42,39 @@
                 </ul>
             </nav>
         </header>
-        <main class="m">                <!--Contenido de la Página-->
+        <main class="m"><!----------------------------------------------Contenido de la Página-------------------------------------------------------------------------->
                 <h1 class="titulo__secundario">Zen Tree</h1><!--Titulo de la sección-->
-                <form class="form1"> <!--Formulario-->
-                <label for="nombre_apellido">Nombre y Apellido</label>
-                <input type="text" name="nombre_apellido"/>
-                <br>
-                <label for="edad">Edad</label>
-                <input type="number" name="edad"/>
-                <br><!--salto-->
-                <textarea type="text">ingrese comentarios</textarea>
-                <br><!--salto-->
-                <!--Opciones de Selección del Formulario-->
-                <br><!--salto-->
-                <div>Hombre</div>
-                <input type="radio" name="sexo" value="Hombre"/>
-                <div>Mujer</div>
-                <input type="radio" name="sexo" value="Mujer"/>
-                <br><!--salto-->
-                <!--Casilla de Verificación del formulario-->
-                <div>Acepta Términos y condiciones</div>
-                <input type="checkbox" name="acepta" value="1" />
-                <br><!--salto-->
-                <input type="submit" value="Enviar" />
-                <input type="reset" value="Borrar" />
-                </form>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus vitae ad commodi itaque illum alias voluptatum at dolores neque officia, ex et. Dolore sequi, tenetur excepturi incidunt odio autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus vitae ad commodi itaque illum alias voluptatum at dolores neque officia, ex et. Dolore sequi, tenetur excepturi incidunt odio autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus vitae ad commodi itaque illum alias voluptatum at dolores neque officia, ex et. Dolore sequi, tenetur excepturi incidunt odio autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus vitae ad commodi itaque illum alias voluptatum at dolores neque officia, ex et. Dolore sequi, tenetur excepturi incidunt odio autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus vitae ad commodi itaque illum alias voluptatum at dolores neque officia, ex et. Dolore sequi, tenetur excepturi incidunt odio autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus vitae ad commodi itaque illum alias voluptatum at dolores neque officia, ex et. Dolore sequi, tenetur excepturi incidunt odio autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ducimus vitae ad commodi itaque illum alias voluptatum at dolores neque officia, ex et. Dolore sequi, tenetur excepturi incidunt odio autem.</p>
+                <p><span class="bullet"><strong>Este espacio de contacto es para que podamos tener un trato directo con todos los que están interesados en este proyecto. Cualquier duda, consulta , reclamo ó sugerencia, para el mejoramiento, es totalmente bienvenido.</p></strong>
+                
+                <section class="container-fluid d-flex justify-content-center text-left mt-10">
+                    <div class="row">
+                        <div class="mx-auto col-sm-12 col-md-4 col-lg-12 py-8 b-5 w-25" style="width: 18rem"></div>
+                            <form class="border border-success shadow mt-2 py-3 bg-white"><!--Formulario-->
+                            <label for="nombre_apellido">Nombre y Apellido</label>
+                            <input type="text" name="nombre_apellido"/>
+                            <br>
+                            <br>
+                            <label for="edad">Edad</label>
+                            <input type="number" name="edad"/>
+                            <br>
+                            <br>
+                            <textarea type="text">Ingrese comentarios</textarea>
+                            <br>
+                            <!--Opciones de Selección del Formulario-->
+                            <div>Hombre</div>
+                            <input type="radio" name="sexo" value="Hombre"/>
+                            <div>Mujer</div>
+                            <input type="radio" name="sexo" value="Mujer"/>
+                            <br>
+                            <!--Casilla de Verificación del formulario-->
+                            <div>Acepta Términos y condiciones</div>
+                            <input type="checkbox" name="acepta" value="1" />
+                            <br>
+                            <button type="button" class="btn btn-success">Enviar</button>
+                            <button type="button" class="btn btn-success">Borrar</button>
+                            </form>
+                        </div>
+                </section>
         </main>
         <footer class="f"><!-----------------------------------------------Pie de página-------------------------------------------------------------------------------->
             <div class="redes">

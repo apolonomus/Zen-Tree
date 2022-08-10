@@ -5,10 +5,14 @@
 /**Variables SASS***/
 @import "../utilities/variables";
 
+/**Mixins***/
+@import "../utilities/mixins";
+
+/**Extends***/
+@import "../utilities/extends";
+
 /**Grid System***/
 @import "../layout/gridsystem";
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Splash&family=The+Nautigal:wght@400;700&display=swap');
 
 /**Media query***/
 @import "../layout/mediaqueries";

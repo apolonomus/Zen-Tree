@@ -1,20 +1,34 @@
-Versión 1.2.:
-Corrección de los bullets en Index.
+Versión 1.3:
+
+SEO:
+    *Sección - Index:   <meta name="keywords" content="Zeen Tree, Nutricion, Salud, Estilo de Vida, Productos">
+                        <meta name="description" content="Página dedicada al buen vivir, salud, nutrición y venta de productos para la casa">
+
+    *Sección - Nosotros: <meta name="keywords" content="Zeen Tree,Nosotros">
+                        <meta name="description" content="Breve historia de como nació el proyecto">
+
+    *Sección - Servicios: <meta name="keywords" content="Zeen Tree, Acerca de nuestros servicios">
+                        <meta name="description" content="Esta sección detalla los diferentes servicios que ofrecemos">
+
+    *Sección - Productos: <meta name="keywords" content="Zeen Tree, Productos, Promos">
+                        <meta name="description" content="Esta sección ofrece los diferentes productos que actualmente ofrecemos">
+
+    *Sección - Contactos: <meta name="keywords" content="Zeen Tree, Contacto">
+                        <meta name="description" content="Esta sección es la forma que nos podes contactar">
+
+Se agregó mixin para medidas y así poder "asociar" dentro de la estructura.
+
+Se mejoro el aspecto de la imagen del header porque tenía detalles. Se migró a photoshop y se hicieron algunos retoques.
+
+Se agrega al proyecto el concepto de extend para optimizar los "Atributos" a las clases. 
 
 Mejoras en la división de la estructura HTML con separación en secciones
-    *Sección - Home: Algunos Card para el main
+    *Sección - Index: Algunos Card para el main (ok) / Imagen de fondo (ok) / Arreglo de los contenedores Pilares x6
 
-    *Sección - Servicios: Card para los servicios que se Ofrece
+    *Sección - Nosotros: Carousel (Boostrap) / Imagen de fondo 
+
+    *Sección - Servicios: Card para los servicios que se Ofrece / Imagen de fondo 
 
     *Sección - Productos: Card para los artículos en venta (ok)
 
-Se agregó tanto Boostrap como el "Zoom In" como animación a cada uno de los item productos.
-En la versión vieja estaba aplicado simplemente a una "Caja" ahora está aplicado un Card.
-
-Se agregó al proyecto las Variables de SASS para poder aplicar cambios de forma más global.
-
-    *Se agregó nesting para poder optimizar la página
-
-Área Grilla global (menos clases). Antes tenia una clase por cada main en cada HTML
-
-Se incluye la carpeta .gitignore para que no suba node
+    *Sección - Contactos: Acplicación de Boostrap (ok). Mejoramiento del aspecto del formulario. Centrado y diagramado con la estructura de Boostrap.

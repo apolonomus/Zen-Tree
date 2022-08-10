@@ -1,7 +1,9 @@
 /**Área Main Global*/
 .m {
     grid-area: main;
-    background-color:$baseColor6;
+    background-image:url(../images/suculentas.jpg);
+    background-position: center;
+    background-size: cover;
     font-family: arial;
     padding: 30px;
     display:flex;
@@ -17,37 +19,38 @@ span.bullet {
     color: $baseColor1;
 } 
 
-/**Titulo de la Página Web*/
-.titulo__principal {
-    font-size: 100px;
-    color: $baseColor5;
-    text-align: center;
-    margin:0;
-    animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
-}
-/**Animación del Título Principal*/
-@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
-
 /**Sección - Contacto-Estilos al Formulario*/
-.fomr1 {
-    align-content:space-around;
-}
 
 /**Titulos Secundarios*/
 .titulo__secundario {
-    font-size: 25px;
-    padding:30px;
+    font-size: 50px;
+    @include medidas ( none, none, 30px, none);
     color: $baseColor1;
-    background-color:whitesmoke;
+    background-color:none;
     text-align:center;
 }
-
 
 /**Titulos Terciario*/
 .titulo__terciario {
     font-size: 20px;
-    padding:30px;
+    @include medidas ( none, none, 30px, none);
     color:$baseColor1;
     text-align:left;
-    background-color: whitesmoke;
+    background-color:none;
+}
+
+/**Titulos Slides*/
+.titulo__slides {
+    font-size: 20px;
+    @include medidas ( none, none, 30px, none);
+    color:$baseColor7;
+    text-align:left;
+    background-color: none;
+}
+
+.carouselExampleControls {
+    height: 1rem;
+    background-color:black;
+    background-position: center;
+    background-size: cover;
 }

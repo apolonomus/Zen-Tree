@@ -1,9 +1,21 @@
 /**Área Header*/
 header {
     grid-area:header;
-    background-image: url(../images/trees.jpg);
+    background-image: url(../images/Trees.png);
+    background-size: cover;
     font-family: $baseFont1;
 }
+
+/**Titulo de la Página Web*/
+.titulo__principal {
+    font-size: 100px;
+    color: $baseColor5;
+    text-align: center;
+    margin:0;
+    animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+}
+/**Animación del Título Principal*/
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 
 /**Para sacar los bullets a la barra de Nav***/
 ul {
@@ -24,8 +36,8 @@ li {
 .barraNav li a {
     margin:0;
     padding: 14px 16px;
-    overflow:hidden;
-    color: #E9EFC0;
+    overflow: hidden;
+    color: $baseColor5;
     font-size: larger;
     text-align: center;
     text-decoration: none;
