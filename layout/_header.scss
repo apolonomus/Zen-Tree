@@ -19,6 +19,7 @@ header {
 
 /**Para sacar los bullets a la barra de Nav***/
 ul {
+    list-style: none;
     overflow: hidden;
     background-color:#32502E;
     text-align: center;
@@ -27,6 +28,7 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 0;
+
 }
 
 li {

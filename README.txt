@@ -1,4 +1,6 @@
-Versión 1.3:
+Versión 1.4:
+
+Se agrego Barra de Navegación tipo lista en el Footer
 
 SEO:
     *Sección - Index:   <meta name="keywords" content="Zeen Tree, Nutricion, Salud, Estilo de Vida, Productos">

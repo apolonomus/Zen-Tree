@@ -126,6 +126,7 @@ header {
 }
 /**Para sacar los bullets a la barra de Nav***/
 ul {
+  list-style: none;
   overflow: hidden;
   background-color: #32502E;
   text-align: center;
@@ -230,12 +231,33 @@ span.bullet {
   grid-area: footer;
   width: none;
   height: none;
-  padding: 30px;
+  padding: 10px;
   margin: none;
   background-color: #32502E;
+}
+
+/**Barra de Navegación Footer*/
+ul.barraNavfooter {
+  flex-direction: column;
+}
+
+.barraNavfooter li a {
+  margin: 0;
+  overflow: hidden;
+  color: #E9EFC0;
+  font-size: smaller;
+  text-align: left;
+  text-decoration: none;
+}
+.barraNavfooter li a:hover {
+  background-color: #111;
 }
 
 .icon {
   width: 48px;
   height: 48px;
+}
+
+.footerT {
+  color: #E9EFC0;
 }/*# sourceMappingURL=style.css.map */
