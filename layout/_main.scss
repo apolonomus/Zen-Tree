@@ -1,7 +1,7 @@
 /**Área Main Global*/
 .m {
     grid-area: main;
-    background-image:url(../images/suculentas.jpg);
+    background-image:$baseColor6;
     background-position: center;
     background-size: cover;
     font-family: arial;
@@ -53,4 +53,47 @@ span.bullet {
     background-color:black;
     background-position: center;
     background-size: cover;
+}
+
+//--Sección Home Cards 360º--//
+.card3-container {
+    position:relative;
+    width: 18rem;
+    height: 412px;
+    perspective: 200rem;
+}
+
+.card3-container:hover .card3-front{
+    transform: rotateY(180deg) ;
+}
+
+.card3-container:hover .card3-back {
+    transform: rotateY(0deg) ;
+}
+
+.card3-back{
+    transform: rotateY(180deg);
+}
+
+.card3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.9s;
+    backface-visibility: hidden;
+    background-color:$baseColor1;
+    
+
+}
+
+.card3-body a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10% 0 0 -23%;
+}
+
+//--Sección Home Algunos Productos--//
+.AP {
+    flex-direction: row;
 }

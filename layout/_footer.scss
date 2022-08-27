@@ -1,8 +1,9 @@
 /**Área Footer*/
 .f {
     grid-area: footer;
-    @include medidas ( none, none, 10px, none);
+    @include medidas ( none, none, 12px, none);
     background-color:#32502E;
+    flex-direction: row;
 }
 
 /**Barra de Navegación Footer*/

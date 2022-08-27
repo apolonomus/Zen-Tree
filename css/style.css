@@ -163,7 +163,7 @@ li {
 /**Área Main Global*/
 .m {
   grid-area: main;
-  background-image: url(../images/suculentas.jpg);
+  background-image: whitesmoke;
   background-position: center;
   background-size: cover;
   font-family: arial;
@@ -225,15 +225,55 @@ span.bullet {
   background-size: cover;
 }
 
+.card3-container {
+  position: relative;
+  width: 18rem;
+  height: 412px;
+  perspective: 200rem;
+}
+
+.card3-container:hover .card3-front {
+  transform: rotateY(180deg);
+}
+
+.card3-container:hover .card3-back {
+  transform: rotateY(0deg);
+}
+
+.card3-back {
+  transform: rotateY(180deg);
+}
+
+.card3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.9s;
+  backface-visibility: hidden;
+  background-color: #32502E;
+}
+
+.card3-body a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10% 0 0 -23%;
+}
+
+.AP {
+  flex-direction: row;
+}
+
 /**Footer***/
 /**Área Footer*/
 .f {
   grid-area: footer;
   width: none;
   height: none;
-  padding: 10px;
+  padding: 12px;
   margin: none;
   background-color: #32502E;
+  flex-direction: row;
 }
 
 /**Barra de Navegación Footer*/
