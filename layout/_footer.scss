@@ -4,6 +4,7 @@
     @include medidas ( none, none, 12px, none);
     background-color:#32502E;
     flex-direction: row;
+
 }
 
 /**Barra de Navegación Footer*/
@@ -25,15 +26,6 @@ ul.barraNavfooter {
 
 }
 
-.redes{
-    @extend .iconsconfig
-}
-
-
-.icon{
-    width: 48px;
-    height: 48px;
-}
 
 .footerT {
     color: $baseColor5;

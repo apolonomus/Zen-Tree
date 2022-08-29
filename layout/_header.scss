@@ -1,6 +1,6 @@
 /**Área Header*/
 header {
-    grid-area:header;
+    grid-area: header;
     background-image: url(../images/Trees.png);
     background-size: cover;
     font-family: $baseFont1;
@@ -43,6 +43,7 @@ li {
     font-size: larger;
     text-align: center;
     text-decoration: none;
+    
 
     &:hover {
         background-color: #111;

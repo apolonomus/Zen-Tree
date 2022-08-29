@@ -12,6 +12,8 @@
     align-items:center;
     text-align: justify;
     min-height: 100%;
+    flex-grow: 1rem;
+    padding: 1rem;
 }
 
 /**Resaltador en el texto*/
@@ -93,7 +95,8 @@ span.bullet {
     margin: -10% 0 0 -23%;
 }
 
-//--Sección Home Algunos Productos--//
-.AP {
-    flex-direction: row;
+//--Sección Productos Cards--//
+.card {
+    margin-bottom: 30px;
 }
+
