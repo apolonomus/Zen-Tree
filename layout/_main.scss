@@ -100,3 +100,22 @@ span.bullet {
     margin-bottom: 30px;
 }
 
+//--Sección Servicios--//
+
+//--Iconos como Bullets en main--//
+.icon {
+    @include medidas (30px, 30px, none, none);
+}
+
+
+
+//--Sección Contactos--//
+
+#formulario {
+background-image:url(../images/formulario.svg);
+@include medidas (600px, 600px, none, none);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border-radius: 5%;
+}

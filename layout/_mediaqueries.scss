@@ -19,11 +19,20 @@
         align-items: center;
     }
 
-    /**Video Youtube Resposive para la reso de 576px **/
-    iframe {
-        width:320px;
-        height: 160px;
+
+    .f ul .footerT {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    #formulario {
+        background-image:url(../images/formulario.svg);
+        @include medidas (100px, 100px, none, none);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
 
 }
 
@@ -45,6 +54,15 @@
         justify-content: center;
         align-items: center;
     }
+
+    #formulario {
+        background-image:url(../images/formulario.svg);
+        @include medidas (300px, 300px, none, none);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+        
 
 
 }
