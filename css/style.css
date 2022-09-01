@@ -17,12 +17,6 @@ body {
 /**Variables SASS***/
 /**Mixins***/
 /**Extends***/
-.iconsconfig {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
 /**Grid System***/
 /**Área de la Página-Grid***/
 .grilla {
@@ -33,6 +27,39 @@ body {
 
 /**Media query***/
 /**Mobile First - Bootstrap**/
+/**Small devices (375 px)**/
+@media screen and (max-width: 375px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "header" "main" "footer";
+  }
+  /**Menú Header**/
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+  .f ul .footerT {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #formulario {
+    align-items: stretch;
+    max-width: 650px;
+    gap: 20px;
+    background-image: url(../images/formulario.svg);
+    width: 100px;
+    height: 100px;
+    padding: none;
+    margin: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
 /**Small devices (landscape phones, 576px and up)**/
 @media screen and (max-width: 576px) {
   .grilla {
