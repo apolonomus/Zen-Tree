@@ -40,44 +40,42 @@
             </nav>
         </header>
         <main class="m"><!----------------------------------------------Contenido de la Página-------------------------------------------------------------------------->
-                <h1 class="titulo__secundario">Zen Tree</h1><!--Titulo de la sección-->
-                <p><span class="bullet"><strong>Este espacio de contacto es para que podamos tener un trato directo con todos los que están interesados en este proyecto. Cualquier duda, consulta , reclamo ó sugerencia, para el mejoramiento, es totalmente bienvenido.</p></strong>
-                    <section id="formulario" class="container d-flex justify-content-center text-left mt-10">
-                        <div class="row">
-                            <div class="mx-auto col-sm-12 col-md-4 col-lg-12 py-8 b-5 w-25" style="width: 18rem"></div>
-                                <form class="mt-2 py-3"><!--Formulario-->
-                                <label for="nombre_apellido">Nombre y Apellido</label>
-                                <input type="text" name="nombre_apellido"/>
-                                <br>
-                                <br>
-                                <label for="edad">Edad</label>
-                                <input type="number" name="edad"/>
-                                <br>
-                                <br>
-                                <textarea type="text">Ingrese comentarios</textarea>
-                                <br>
-                                <!--Opciones de Selección del Formulario-->
-                                <div>Hombre</div>
-                                <input type="radio" name="sexo" value="Hombre"/>
-                                <div>Mujer</div>
-                                <input type="radio" name="sexo" value="Mujer"/>
-                                <br>
-                                <!--Casilla de Verificación del formulario-->
-                                <div>Acepta Términos y condiciones</div>
-                                <input type="checkbox" name="acepta" value="1" />
-                                <br>
-                                <button type="button" class="btn btn-success">Enviar</button>
-                                <button type="button" class="btn btn-success">Borrar</button>
-                                </form>
+                    <!-------------------------------------------------------Formulario---------------------------------------------------------------------------------->
+                    <section class="container">
+                        <div class="row my-5">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div>
+                                    <form action="" method="POST" class="formulario">
+                                        <h1 class="titulo__secundario">Zen Tree</h1><!--Titulo de la sección-->
+                                        <div class="form-group">
+                                            <label>Nombre:</label>
+                                            <input type="text" placeholder="nombre completo" maxlength="20" id="nombre" name="nombre" class="form-control"></imput>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Apellido:</label>
+                                            <input type="text" placeholder="apellido completo" maxlength="20" id="apellido" name="nombre" class="form-control"></imput>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Telefono de Contacto:</label>
+                                            <input type="number" placeholder="teléfono" maxlength="20" id="numero" name="numero" class="form-control"></imput>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class=" btn btn-success">Enviar</button>
+                                            <a href="">Limpiar</a>
+                                        </div>
+                                    </form>
+
+                                </div>
                             </div>
-                    </section>               
+                        </div>
+                </section>               
         </main>
         <footer class="f"><!-----------------------------------------------Pie de página-------------------------------------------------------------------------------->
-            <!-----------------Secciones------------>
+            <!----------------------------------------------------------------Secciones--------------------------------------------------------------------------------->
             <section class="container-fluid text-left mt-2">
 
                 <div class="row py-3">      
-                        <!------------Barra Nav------------>
+                        <!------------------------------------------------------Barra Nav------------------------------------------------------------------------------->
                         <div class="max-auto col-sm-1 col-md-2 col-lg-3" style="width: 18rem;">
                             <h4 class="footerT">NAVEGACIÓN</h4>
                             <nav>

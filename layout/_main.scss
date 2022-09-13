@@ -107,18 +107,17 @@ span.bullet {
     @include medidas (30px, 30px, none, none);
 }
 
-
-
 //--Sección Contactos--//
 
-#formulario {
+.formulario {
     background-image: url(../images/formulario.svg);
     width: 600px;
     height: 600px;
-    padding: none;
-    margin: none;
+    padding: 120px;
+    margin:0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 5%;
-  }
+    align-items:stretch;
+}
