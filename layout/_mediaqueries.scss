@@ -25,16 +25,6 @@
         align-items: center;
     }
 
-    #formulario {
-        align-items: stretch;
-        max-width: 650px;
-        gap:20px;
-        background-image:url(../images/formulario.svg);
-        @include medidas (100px, 100px, none, none);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        }
 
 }
 
@@ -63,13 +53,6 @@
         align-items: center;
     }
 
-    #formulario {
-        background-image:url(../images/formulario.svg);
-        @include medidas (100px, 100px, none, none);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        }
 
 }
 
@@ -91,16 +74,6 @@
         justify-content: center;
         align-items: center;
     }
-
-    #formulario {
-        background-image:url(../images/formulario.svg);
-        @include medidas (300px, 300px, none, none);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        }
-        
-
 
 }
 
